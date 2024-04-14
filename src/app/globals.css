@@ -6,14 +6,14 @@
 @tailwind utilities;
 
 @layer base {
-  :root: {
+  :root {
     --radius: 0.5rem;
   }
 }
 
 @layer base {
   * {
-    @apply border-border;
+    /* @apply border-muted-foreground; */
 
     /* Custom Scroll Bar */
     &::-webkit-scrollbar {
@@ -23,12 +23,12 @@
       @apply bg-transparent;
     }
     &::-webkit-scrollbar-thumb {
-      @apply bg-border rounded-full;
+      @apply bg-muted rounded-full;
     }
   }
   
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-white;
   }
 
   /* Disable number input arrows */
