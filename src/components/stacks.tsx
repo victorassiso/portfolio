@@ -21,9 +21,9 @@ export function Stacks() {
       <SectionContent className="flex gap-8">
         <StackCard tag="Frontend Web" icon="./react.svg" name="React JS" />
         <StackCard tag="Backend Web" icon="./node.svg" name="Node.js" />
-        <StackCard icon="./typescript.svg" name="Typescript" />
-        <StackCard icon="./c-plus-plus.svg" name="C++" />
-        <StackCard icon="./python.svg" name="Python" />
+        <StackCard icon="/typescript.svg" name="Typescript" />
+        <StackCard icon="/c-plus-plus.svg" name="C++" />
+        <StackCard icon="/python.svg" name="Python" />
       </SectionContent>
     </SectionContainer>
   )
