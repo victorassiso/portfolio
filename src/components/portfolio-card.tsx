@@ -1,5 +1,4 @@
 'use client'
-
 import Image from 'next/image'
 
 import {
@@ -39,13 +38,11 @@ export function PortfolioCard({
 }: PortfolioCardProps) {
   return (
     <Dialog>
-      <div className="flex w-[18.75rem]  flex-col gap-6">
+      <div className="flex flex-col gap-6">
         <DialogTrigger className="relative h-[232px] w-[300px]">
           <Image
             src={tumbnail}
             alt=""
-            // width={300}
-            // height={232}
             layout="fill"
             objectFit="contain"
             className="cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-sm hover:shadow-muted"
@@ -55,42 +52,38 @@ export function PortfolioCard({
           {title}
         </DialogTrigger>
       </div>
-      <DialogContent className="max-h-[80%] overflow-y-scroll">
+      <DialogContent className="max-h-[90%] overflow-y-scroll rounded-lg">
         <DialogHeader>
-          <DialogTitle className="text-2xl">{title}</DialogTitle>
+          <DialogTitle className="font-title text-3xl">{title}</DialogTitle>
         </DialogHeader>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 pb-20">
           <Carousel className="mx-auto w-full px-6">
-            <CarouselContent className="-ml-1 h-[330px]">
+            <CarouselContent className="-ml-1 h-[500px]">
               {images.map((image, index) => (
                 <CarouselItem key={index} className="relative h-full w-full">
-                  {/* <MapInteractionCSS> */}
                   <Image
                     src={image.path}
                     alt={image.caption}
-                    // width={422}
-                    // height={349}
                     layout="fill"
                     objectFit="contain"
+                    // className="hover:scale-125"
                   />
-                  {/* </MapInteractionCSS> */}
                 </CarouselItem>
               ))}
             </CarouselContent>
-            {/* <span className="text-sm text-muted-foreground">Caption</span> */}
             <CarouselPrevious className="ml-8" />
             <CarouselNext className="mr-8" />
           </Carousel>
 
           <div className="flex flex-col gap-2">
-            <span className="font-title font-bold">
+            <span className="font-title text-lg font-semibold">
               Skills and deliverables
             </span>
             <div className="flex flex-wrap gap-1 space-x-1">
               {skills.map((skill, index) => (
                 <div
                   key={index}
-                  className="inline-block rounded-[5rem] bg-muted px-2 py-0.5 text-sm"
+                  className="inline-block rounded-[5rem] bg-primary px-2 py-0.5 font-title text-sm"
                 >
                   {skill}
                 </div>
@@ -99,16 +92,20 @@ export function PortfolioCard({
           </div>
 
           <div className="flex flex-col gap-2">
-            <span>Project description</span>
-            <span className="text-sm">{description}</span>
+            <span className="font-title text-lg font-semibold">
+              Project description
+            </span>
+            <span className="text-sm text-muted-foreground">{description}</span>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <span>Avalable at:</span>
+          <div className="flex items-center gap-4">
+            <span className="font-title text-lg font-semibold">
+              Avalable at:
+            </span>
             <a
               href={link}
               target="_blank"
-              className="cursor-pointer text-sm text-primary underline"
+              className="cursor-pointer text-sm underline"
             >
               {link}
             </a>
