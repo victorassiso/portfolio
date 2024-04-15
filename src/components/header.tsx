@@ -9,9 +9,9 @@ export function Header() {
         <span className="text-3xl font-bold uppercase">Victor Assis</span>
       </div>
       <div>
-        <ul className="text-muted-foreground flex items-center justify-between">
+        <ul className="flex items-center justify-between text-muted-foreground">
           <li>
-            <div className="from-muted h-0.5 w-36 bg-gradient-to-l" />
+            <div className="h-0.5 w-36 bg-gradient-to-l from-muted" />
           </li>
           <li>
             <span>HOME</span>
@@ -26,7 +26,7 @@ export function Header() {
             <span>CONTACT</span>
           </li>
           <li>
-            <div className="from-muted h-0.5 w-36 bg-gradient-to-r" />
+            <div className="h-0.5 w-36 bg-gradient-to-r from-muted" />
           </li>
         </ul>
       </div>

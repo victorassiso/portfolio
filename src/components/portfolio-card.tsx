@@ -13,7 +13,7 @@ export function PortfolioCard({ tumbnail, title, link }: PortfolioCardProps) {
       <a
         href={link}
         target="_blank"
-        className="text-muted-foreground hover:pointer text-xl underline"
+        className="hover:pointer text-xl text-muted-foreground underline"
       >
         {title}
       </a>

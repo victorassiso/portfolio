@@ -48,7 +48,7 @@ export function SectionTitle(props: SectionProps) {
 export function SectionDescription(props: SectionProps) {
   return (
     <span
-      className={cn('text-muted-foreground max-w-[25rem]', props.className)}
+      className={cn('max-w-[25rem] text-muted-foreground', props.className)}
     >
       {props.children}
     </span>
@@ -61,7 +61,7 @@ export function SectionContent(props: SectionProps) {
 
 export function SectionPagination(props: SectionProps) {
   return (
-    <span className={cn('text-muted text-sm', props.className)}>
+    <span className={cn('text-sm text-muted', props.className)}>
       {props.children}
     </span>
   )

@@ -12,11 +12,11 @@ export function PersonalityCard({
   return (
     <div className="flex w-48 flex-col items-center gap-4">
       <div className="">
-        <div className="bg-card relative flex h-12 w-12 items-center justify-center rounded-full">
-          <span className="font-title z-10 ml-6 text-2xl font-black">
+        <div className="relative flex h-12 w-12 items-center justify-center rounded-full bg-card">
+          <span className="z-10 ml-6 font-title text-2xl font-black">
             {percentage}%
           </span>
-          <div className="border-primary absolute inset-0 z-0 rounded-full border-2" />
+          <div className="absolute inset-0 z-0 rounded-full border-2 border-primary" />
         </div>
       </div>
       <span className="text-xl font-extrabold">{title}</span>
