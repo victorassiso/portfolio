@@ -1,12 +1,12 @@
 import Image from 'next/image'
 
-interface StackCardProps {
+interface SkillCardProps {
   icon: string
   title: string
   description: string
 }
 
-export function SkillCard({ icon, title, description }: StackCardProps) {
+export function SkillCard({ icon, title, description }: SkillCardProps) {
   return (
     <div className="flex w-48 flex-col items-center gap-4">
       <div className="bg-card flex h-16 w-16 items-center justify-center rounded-full">
