@@ -17,6 +17,9 @@ export function SectionContainer(props: SectionProps) {
     AOS.init({
       duration: 2000,
       once: false,
+      // easing: 'ease-in-out',
+      // offset: 200,
+      // delay: 0,
     })
   })
   return (

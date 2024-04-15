@@ -8,7 +8,7 @@ interface PortfolioCardProps {
 
 export function PortfolioCard({ tumbnail, title, link }: PortfolioCardProps) {
   return (
-    <div className="flex w-[18.75rem] flex-col gap-6">
+    <div className="flex w-full min-w-[18.75rem] flex-col gap-6">
       <Image src={tumbnail} alt="" width={300} height={232} />
       <a
         href={link}

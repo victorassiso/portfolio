@@ -16,7 +16,7 @@ export function Portfolio() {
           Projects that I built for learning and practicing
         </SectionDescription>
       </SectionHeader>
-      <SectionContent className="flex justify-between">
+      <SectionContent className="flex gap-24 overflow-auto pb-2">
         <PortfolioCard
           tumbnail="/print-adas.png"
           title="Next.js + Firebase pet adoption platform"
@@ -31,6 +31,16 @@ export function Portfolio() {
           tumbnail="/print-credphone.png"
           title="WordPress + React website with price simulation tool"
           link={'https://credphone.pt'}
+        />
+        <PortfolioCard
+          tumbnail="/print-coffee-delivery.png"
+          title="React coffee delivery e-commerce"
+          link={'https://victorassiso.github.io/coffee-delivery/'}
+        />
+        <PortfolioCard
+          tumbnail="/print-timer.png"
+          title="React Timer & Task Tracker"
+          link={'https://victorassiso.github.io/timer/'}
         />
       </SectionContent>
     </SectionContainer>
