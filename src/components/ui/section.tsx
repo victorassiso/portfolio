@@ -1,4 +1,9 @@
-import { ReactNode } from 'react'
+'use client'
+
+import 'aos/dist/aos.css'
+
+import AOS from 'aos'
+import { ReactNode, useEffect } from 'react'
 
 import { cn } from '@/libs/utils'
 
@@ -8,10 +13,19 @@ interface SectionProps {
 }
 
 export function SectionContainer(props: SectionProps) {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: false,
+    })
+  })
   return (
-    <div className={cn('flex flex-col gap-10 py-8', props.className)}>
+    <section
+      className={cn('flex flex-col gap-10 py-8', props.className)}
+      data-aos="fade-up"
+    >
       {props.children}
-    </div>
+    </section>
   )
 }
 
@@ -25,15 +39,17 @@ export function SectionHeader(props: SectionProps) {
 
 export function SectionTitle(props: SectionProps) {
   return (
-    <span className={cn('font-title text-3xl font-bold', props.className)}>
+    <h2 className={cn('font-title text-3xl font-bold', props.className)}>
       {props.children}
-    </span>
+    </h2>
   )
 }
 
 export function SectionDescription(props: SectionProps) {
   return (
-    <span className={cn('text-muted max-w-[25rem]', props.className)}>
+    <span
+      className={cn('text-muted-foreground max-w-[25rem]', props.className)}
+    >
       {props.children}
     </span>
   )
