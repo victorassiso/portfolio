@@ -7,14 +7,49 @@
 
 @layer base {
   :root {
-    --radius: 0.5rem;
+    --background: 240 3% 6%;
+    --foreground: 0 0% 98%;
+
+    --card: 210 6% 7%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 210 6% 7%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 209 57% 41%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 210 5% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 5% 22%;
+    --muted-foreground: 210 5% 49%;
+
+    --accent: 209 45% 14%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 200 5% 12%;
+    --input: 210 4% 18%;
+    --ring: 209 58% 40%;
+
+    --radius: 0rem;
   }
 }
 
 @layer base {
   * {
-    /* @apply border-muted-foreground; */
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-white;
+  }
+}
 
+@layer base {
+  * {
     /* Custom Scroll Bar */
     &::-webkit-scrollbar {
       @apply w-2 h-2;
@@ -25,10 +60,6 @@
     &::-webkit-scrollbar-thumb {
       @apply bg-muted rounded-full;
     }
-  }
-  
-  body {
-    @apply bg-background text-white;
   }
 
   /* Disable number input arrows */
@@ -52,33 +83,4 @@
     background-color 500000s ease-in-out 0s,
     color 500000s ease-in-out 0s;
   }
-}
-
-@layer utilities {
-  @media (prefers-reduced-motion: no-preference) {
-    .reveal {
-      opacity: 0;
-      transform: translateY(200px);
-      transition: opacity 1s ease-in-out, transform 2s ease-in-out;
-    }
-
-    .reveal.active {
-      transform: translateY(0px);
-      opacity: 1;
-      transition: opacity 1s ease-in-out, transform 2s ease-in-out;
-    }
-
-    /* @keyframes fade-up {
-      from {
-        opacity: 0;
-        transform: translateY(500px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0px);
-        animation-timeline: auto;
-      }
-    } */
-  }
-  
 }

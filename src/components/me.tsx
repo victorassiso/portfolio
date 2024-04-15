@@ -2,6 +2,8 @@ import Image from 'next/image'
 
 import { cn } from '@/libs/utils'
 
+import { Button } from './ui/button'
+
 interface MeProps {
   className?: string
 }
@@ -24,9 +26,12 @@ export function Me({ className }: MeProps) {
           </span>
         </div>
         <div>
-          <button className="tex-xl bg-primary px-6 py-4 font-bold uppercase transition-opacity duration-200 ease-in-out hover:opacity-80">
+          {/* <button className="tex-xl bg-primary px-6 py-4 font-bold uppercase transition-opacity duration-200 ease-in-out hover:opacity-80">
             DOWNLOAD RESUME
-          </button>
+          </button> */}
+          <Button size="lg" className="tex-xl font-bold uppercase">
+            Download Resume
+          </Button>
         </div>
       </div>
       <div>

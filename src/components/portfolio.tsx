@@ -1,3 +1,5 @@
+import { projects } from '@/assets/projects'
+
 import { PortfolioCard } from './portfolio-card'
 import {
   SectionContainer,
@@ -17,31 +19,18 @@ export function Portfolio() {
         </SectionDescription>
       </SectionHeader>
       <SectionContent className="flex gap-24 overflow-auto pb-2">
-        <PortfolioCard
-          tumbnail="/print-adas.png"
-          title="Next.js + Firebase pet adoption platform"
-          link={'https://adas-saquarema.vercel.app/'}
-        />
-        <PortfolioCard
-          tumbnail="/print-delivery-shop.png"
-          title="Full stack React + Node.js restaurant delivery management system"
-          link={'https://deliveryshop.victorassis.eng.br/'}
-        />
-        <PortfolioCard
-          tumbnail="/print-credphone.png"
-          title="WordPress + React website with price simulation tool"
-          link={'https://credphone.pt'}
-        />
-        <PortfolioCard
-          tumbnail="/print-coffee-delivery.png"
-          title="React coffee delivery e-commerce"
-          link={'https://victorassiso.github.io/coffee-delivery/'}
-        />
-        <PortfolioCard
-          tumbnail="/print-timer.png"
-          title="React Timer & Task Tracker"
-          link={'https://victorassiso.github.io/timer/'}
-        />
+        {projects.map(
+          ({ title, description, tumbnail, images, skills, link }) => (
+            <PortfolioCard
+              title={title}
+              description={description}
+              tumbnail={tumbnail}
+              images={images}
+              skills={skills}
+              link={link}
+            />
+          ),
+        )}
       </SectionContent>
     </SectionContainer>
   )
