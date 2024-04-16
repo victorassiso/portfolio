@@ -22,7 +22,7 @@ export function Personality() {
           </span>
         </SectionDescription>
       </SectionHeader>
-      <SectionContent className="flex justify-between">
+      <SectionContent className="flex w-full  gap-10 overflow-x-scroll px-6 py-10">
         <PersonalityCard
           percentage={54}
           title="Introverted"

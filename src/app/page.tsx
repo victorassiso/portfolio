@@ -7,7 +7,7 @@ import { Stacks } from '@/components/stacks'
 
 export default function Home() {
   return (
-    <div className="relative mx-auto flex max-w-screen-2xl flex-col gap-32 px-48 pb-48">
+    <div className="relative mx-auto flex max-w-screen-2xl cursor-default flex-col gap-32 px-32 pb-48">
       <Header />
       <Me />
       <Stacks />

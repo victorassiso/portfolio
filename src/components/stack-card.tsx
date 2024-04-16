@@ -8,7 +8,7 @@ interface StackCardProps {
 
 export function StackCard({ tag, name, icon }: StackCardProps) {
   return (
-    <div className="flex h-36 w-36 flex-col items-center justify-center gap-3 bg-card">
+    <div className="flex h-36 w-36 cursor-default flex-col items-center justify-center gap-3 bg-card hover:scale-125">
       <div className="inline-flex h-4 w-full">
         {tag && (
           <div className="inline-flex items-center gap-1 bg-card-foreground pl-2">

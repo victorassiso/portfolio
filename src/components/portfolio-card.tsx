@@ -38,19 +38,21 @@ export function PortfolioCard({
 }: PortfolioCardProps) {
   return (
     <Dialog>
-      <div className="flex flex-col gap-6">
-        <DialogTrigger className="relative h-[232px] w-[300px]">
-          <Image
-            src={tumbnail}
-            alt=""
-            layout="fill"
-            objectFit="contain"
-            className="cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-sm hover:shadow-muted"
-          />
-        </DialogTrigger>
-        <DialogTrigger className="hover:pointer text-xl text-muted-foreground underline">
-          {title}
-        </DialogTrigger>
+      <div className="flex flex-col gap-6 py-10 pl-7">
+        <div className="flex flex-col gap-6 hover:scale-125">
+          <DialogTrigger className="relative h-[232px] w-[300px]">
+            <Image
+              src={tumbnail}
+              alt=""
+              layout="fill"
+              objectFit="contain"
+              className="cursor-pointer transition-all duration-300 ease-in-out hover:shadow-sm hover:shadow-muted"
+            />
+          </DialogTrigger>
+          <DialogTrigger className="hover:pointer text-xl text-muted-foreground underline">
+            {title}
+          </DialogTrigger>
+        </div>
       </div>
       <DialogContent className="max-h-[90%] overflow-y-scroll rounded-lg">
         <DialogHeader>
@@ -66,7 +68,6 @@ export function PortfolioCard({
                     alt={image.caption}
                     layout="fill"
                     objectFit="contain"
-                    // className="hover:scale-125"
                   />
                 </CarouselItem>
               ))}
