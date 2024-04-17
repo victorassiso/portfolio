@@ -19,7 +19,12 @@ interface MeProps {
 
 export function Me({ className }: MeProps) {
   return (
-    <div className={cn('flex items-center justify-between py-10', className)}>
+    <div
+      className={cn(
+        'flex items-center justify-between py-10 md:flex-row',
+        className,
+      )}
+    >
       <div className="flex flex-col gap-4">
         <h1 className="font-title text-6xl font-bold">
           <span className="block">Software Engineer</span>
@@ -35,9 +40,6 @@ export function Me({ className }: MeProps) {
           </span>
         </div>
         <div>
-          {/* <button className="tex-xl bg-primary px-6 py-4 font-bold uppercase transition-opacity duration-200 ease-in-out hover:opacity-80">
-            DOWNLOAD RESUME
-          </button> */}
           <Dialog>
             <DialogTrigger asChild>
               <Button size="lg" className="tex-xl font-bold uppercase">
@@ -77,7 +79,7 @@ export function Me({ className }: MeProps) {
           </Dialog>
         </div>
       </div>
-      <div>
+      <div className="hidden xl:block">
         <Image
           src="/profile.png"
           alt="Profile picture"

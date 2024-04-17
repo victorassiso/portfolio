@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <div className="relative h-full w-full overflow-y-scroll">
-      <div className="mx-auto flex min-w-[320px] max-w-screen-2xl cursor-default flex-col gap-32 overflow-y-scroll px-8 pb-48 sm:px-10 md:px-20 lg:px-28 xl:px-32">
+      <div className="mx-auto flex min-w-[320px] max-w-screen-2xl cursor-default flex-col gap-28 overflow-y-scroll px-8 pb-48 sm:gap-32 sm:px-10 md:px-20 lg:px-28 xl:px-32">
         <Header />
         <div id="home" className="target:scroll-mt-32">
           <Me />
@@ -35,7 +35,7 @@ export default function Home() {
         <div id="about" className="target:scroll-mt-32">
           <Personality />
         </div>
-        <div className="absolute -top-[400px] left-0 right-0 z-0 mx-auto h-[700px] max-w-screen-2xl rounded-[50%] bg-black" />
+        <div className="absolute -top-[220px] left-0 right-0 z-0 mx-auto h-[400px] max-w-screen-2xl rounded-[50%] bg-black lg:-top-[400px] lg:h-[700px]" />
       </div>
     </div>
   )

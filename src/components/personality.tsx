@@ -24,19 +24,9 @@ export function Personality() {
       </SectionHeader>
       <SectionContent className="flex w-full gap-10 overflow-x-scroll px-6 py-10 pl-6">
         <PersonalityCard
-          percentage={54}
-          title="Introverted"
-          description="Introverted individuals tend to prefer fewer, yet deep and meaningful, social interactions and often feel drawn to calmer environments."
-        />
-        <PersonalityCard
-          percentage={66}
-          title="Intuitive"
-          description="Intuitive individuals are very imaginative, open-minded, and curious. They value originality and focus on hidden meanings and distant possibilities."
-        />
-        <PersonalityCard
-          percentage={78}
-          title="Thinking"
-          description="Thinking individuals focus on objectivity and rationality, often dismissing emotions in favor of logic. They tend to see effectiveness as more important than social harmony."
+          percentage={83}
+          title="Assertive"
+          description="Assertive individuals are self-assured, even-tempered, and resistant to stress. They refuse to worry too much and tend to be self-confident when striving to achieve goals."
         />
         <PersonalityCard
           percentage={79}
@@ -44,9 +34,19 @@ export function Personality() {
           description="Judging individuals are decisive, thorough, and highly organized. They value clarity, predictability, and closure, preferring structure and planning to spontaneity."
         />
         <PersonalityCard
-          percentage={83}
-          title="Assertive"
-          description="Assertive individuals are self-assured, even-tempered, and resistant to stress. They refuse to worry too much and tend to be self-confident when striving to achieve goals."
+          percentage={78}
+          title="Thinking"
+          description="Thinking individuals focus on objectivity and rationality, often dismissing emotions in favor of logic. They tend to see effectiveness as more important than social harmony."
+        />
+        <PersonalityCard
+          percentage={66}
+          title="Intuitive"
+          description="Intuitive individuals are very imaginative, open-minded, and curious. They value originality and focus on hidden meanings and distant possibilities."
+        />
+        <PersonalityCard
+          percentage={54}
+          title="Introverted"
+          description="Introverted individuals tend to prefer fewer, yet deep and meaningful, social interactions and often feel drawn to calmer environments."
         />
       </SectionContent>
       <a
