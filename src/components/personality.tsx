@@ -22,7 +22,7 @@ export function Personality() {
           </span>
         </SectionDescription>
       </SectionHeader>
-      <SectionContent className="flex w-full  gap-10 overflow-x-scroll px-6 py-10">
+      <SectionContent className="flex w-full gap-10 overflow-x-scroll px-6 py-10 pl-6">
         <PersonalityCard
           percentage={54}
           title="Introverted"
@@ -49,6 +49,13 @@ export function Personality() {
           description="Assertive individuals are self-assured, even-tempered, and resistant to stress. They refuse to worry too much and tend to be self-confident when striving to achieve goals."
         />
       </SectionContent>
+      <a
+        href="https://www.16personalities.com/"
+        target="_blank"
+        className="text-muted"
+      >
+        https://www.16personalities.com/
+      </a>
     </SectionContainer>
   )
 }
