@@ -15,16 +15,19 @@ export function Header() {
               <div className="h-0.5 w-36 bg-gradient-to-l from-muted" />
             </li>
             <li>
-              <span>HOME</span>
+              <a href="#home">HOME</a>
             </li>
             <li>
-              <span>ABOUT ME</span>
+              <a href="#stacks">STACKS</a>
             </li>
             <li>
-              <span>MY WORK</span>
+              <a href="#skills">SKILLS</a>
             </li>
             <li>
-              <span>CONTACT</span>
+              <a href="#portfolio">PORTFOLIO</a>
+            </li>
+            <li>
+              <a href="#about">ABOUT ME</a>
             </li>
             <li>
               <div className="h-0.5 w-36 bg-gradient-to-r from-muted" />

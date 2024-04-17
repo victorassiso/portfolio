@@ -10,7 +10,7 @@ interface MeProps {
 
 export function Me({ className }: MeProps) {
   return (
-    <div className={cn('flex items-center justify-between py-8', className)}>
+    <div className={cn('flex items-center justify-between py-10', className)}>
       <div className="flex flex-col gap-4">
         <h1 className="font-title text-6xl font-bold">
           <span className="block">Software Engineer</span>
