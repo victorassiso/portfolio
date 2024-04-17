@@ -39,7 +39,7 @@ export function PortfolioCard({
   return (
     <Dialog>
       <div className="flex flex-col gap-6 py-10 pl-7">
-        <div className="flex flex-col gap-6 hover:scale-125">
+        <div className="flex flex-col gap-6 transition-all duration-300 ease-in-out hover:scale-125">
           <DialogTrigger className="relative h-[232px] w-[300px]">
             <Image
               src={tumbnail}

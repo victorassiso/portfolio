@@ -18,7 +18,7 @@ export function Stacks() {
           every high-growth organization
         </SectionDescription>
       </SectionHeader>
-      <SectionContent className="flex gap-8">
+      <SectionContent className="flex gap-8 overflow-x-scroll py-5 pl-4">
         <StackCard tag="Frontend Web" icon="./react.svg" name="React JS" />
         <StackCard tag="Backend Web" icon="./node.svg" name="Node.js" />
         <StackCard icon="/typescript.svg" name="Typescript" />

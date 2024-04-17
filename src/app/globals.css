@@ -58,7 +58,7 @@
       @apply bg-transparent;
     }
     &::-webkit-scrollbar-thumb {
-      @apply bg-muted rounded-full;
+      @apply bg-card rounded-full;
     }
   }
 
@@ -82,5 +82,19 @@
     transition:
     background-color 500000s ease-in-out 0s,
     color 500000s ease-in-out 0s;
+  }
+}
+
+@layer components {
+  .sticky {
+      @apply w-screen !fixed !top-0 -ml-1;
+      .nav-child {
+        @apply bg-card py-2 transition-all duration-1000 ease-in-out;
+        
+        ul, li, a {
+          @apply text-white text-sm transition-all duration-1000 ease-in-out;
+        }
+      }
+
   }
 }

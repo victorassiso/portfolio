@@ -10,7 +10,7 @@ export function PersonalityCard({
   description,
 }: PersonalityCardProps) {
   return (
-    <div className="flex min-w-52 flex-col items-center gap-4 hover:scale-125">
+    <div className="flex min-w-52 flex-col items-center gap-4 transition-all duration-300 ease-in-out hover:scale-125">
       <div className="">
         <div className="relative flex h-12 w-12 items-center justify-center rounded-full bg-card">
           <span className="z-10 ml-6 font-title text-2xl font-black">

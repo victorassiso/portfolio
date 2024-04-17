@@ -16,7 +16,7 @@ export function Skills() {
           Some people also call them skills
         </SectionDescription>
       </SectionHeader>
-      <SectionContent className="flex gap-14">
+      <SectionContent className="flex gap-14 overflow-x-scroll py-7 pl-4">
         <SkillCard
           icon="/rocket.svg"
           title="Efficiency"
