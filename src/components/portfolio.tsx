@@ -18,7 +18,7 @@ export function Portfolio() {
           Projects that I built for learning and practicing
         </SectionDescription>
       </SectionHeader>
-      <SectionContent className="flex gap-24 overflow-auto pb-2">
+      <SectionContent className="flex gap-24 overflow-auto pb-2 pl-1 pr-10">
         {projects.map(
           ({ title, description, tumbnail, images, skills, link }) => (
             <PortfolioCard

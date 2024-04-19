@@ -22,7 +22,7 @@ export function Personality() {
           </span>
         </SectionDescription>
       </SectionHeader>
-      <SectionContent className="flex w-full gap-10 overflow-x-scroll px-6 py-10 pl-6">
+      <SectionContent className="flex w-full gap-10 overflow-x-scroll py-10 pl-6 pr-8">
         <PersonalityCard
           percentage={83}
           title="Assertive"
