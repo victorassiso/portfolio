@@ -58,7 +58,7 @@ export function Me({ className }: MeProps) {
                   <a
                     href="/cv/victor_assis_cv_en.pdf"
                     download="VICTOR_ASSIS_CV_EN"
-                    className="flex gap-2"
+                    className="flex items-center gap-2"
                   >
                     <Download />
                     English
@@ -68,7 +68,7 @@ export function Me({ className }: MeProps) {
                   <a
                     href="/cv/victor_assis_cv_pt.pdf"
                     download="VICTOR_ASSIS_CV_PT"
-                    className="flex gap-2"
+                    className="flex items-center gap-2"
                   >
                     <Download />
                     Português
