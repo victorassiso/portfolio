@@ -18,14 +18,19 @@ export function Skills() {
       </SectionHeader>
       <SectionContent className="flex gap-14 overflow-x-scroll py-7 pl-4">
         <SkillCard
+          icon="/badge.svg"
+          title="Excellence"
+          description="Solved complex system integration challenges & received recognition."
+        />
+        <SkillCard
           icon="/rocket.svg"
           title="Efficiency"
           description="Automated tasks & produced bug free and highly performant code."
         />
         <SkillCard
-          icon="/badge.svg"
-          title="Excellence"
-          description="Solved complex system integration challenges & received recognition."
+          icon="/compass.svg"
+          title="Resourcefulness"
+          description="Created quick and clever ways to overcome difficulties."
         />
       </SectionContent>
     </SectionContainer>

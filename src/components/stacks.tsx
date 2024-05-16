@@ -14,8 +14,8 @@ export function Stacks() {
       <SectionHeader>
         <SectionTitle>Stacks I work with</SectionTitle>
         <SectionDescription>
-          Shipping knowledge in all the leading tech stacks that is a part of
-          every high-growth organization
+          Familiarity with various leading tech stacks that are part of every
+          high-growth organization
         </SectionDescription>
       </SectionHeader>
       <SectionContent className="flex gap-8 overflow-x-scroll py-5 pl-4">
