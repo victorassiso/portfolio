@@ -54,7 +54,7 @@ export function PortfolioCard({
           </DialogTrigger>
         </div>
       </div>
-      <DialogContent className="max-h-[90%] overflow-y-scroll rounded-lg">
+      <DialogContent className="max-h-[90%] overflow-y-auto rounded-lg">
         <DialogHeader>
           <DialogTitle className="font-title text-3xl">{title}</DialogTitle>
         </DialogHeader>
@@ -63,12 +63,22 @@ export function PortfolioCard({
             <CarouselContent className="-ml-1 h-[500px]">
               {images.map((image, index) => (
                 <CarouselItem key={index} className="relative h-full w-full">
-                  <Image
-                    src={image.path}
-                    alt={image.caption}
-                    layout="fill"
-                    objectFit="contain"
-                  />
+                  {image.path.includes('.mp4') ? (
+                    <video
+                      src={image.path}
+                      autoPlay
+                      loop
+                      muted
+                      className="h-full w-full object-contain"
+                    />
+                  ) : (
+                    <Image
+                      src={image.path}
+                      alt={image.caption}
+                      layout="fill"
+                      objectFit="contain"
+                    />
+                  )}
                 </CarouselItem>
               ))}
             </CarouselContent>

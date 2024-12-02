@@ -17,8 +17,8 @@ export default function Home() {
   }
 
   return (
-    <div className="relative h-full w-full overflow-y-scroll">
-      <div className="mx-auto flex min-w-[320px] max-w-screen-2xl cursor-default flex-col gap-28 overflow-y-scroll px-8 pb-48 sm:gap-32 sm:px-10 md:px-20 lg:px-28 xl:px-32">
+    <div className="relative h-full w-full overflow-y-auto">
+      <div className="mx-auto flex min-w-[320px] max-w-screen-2xl cursor-default flex-col gap-28 overflow-y-auto px-8 pb-48 sm:gap-32 sm:px-10 md:px-20 lg:px-28 xl:px-32">
         <Header />
         <div id="home" className="target:scroll-mt-32">
           <Me />
