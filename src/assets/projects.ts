@@ -1,4 +1,4 @@
-interface Project {
+export interface Project {
   title: string
   description: string
   tumbnail: string
@@ -7,7 +7,9 @@ interface Project {
     path: string
     caption: string
   }[]
-  link: string
+  availableAt?: string[]
+  repositories?: string[]
+  institutionalWebsite?: string
 }
 
 export const projects: Project[] = [
@@ -45,7 +47,9 @@ export const projects: Project[] = [
         caption: 'Reports Module Demo',
       },
     ],
-    link: 'https://civitas.rio',
+    institutionalWebsite: 'https://civitas.rio',
+    repositories: ['https://github.com/prefeitura-rio/civitas-app'],
+    availableAt: ['https://app.civitas.rio'],
   },
   {
     title: 'Integraded Healthcare Record',
@@ -83,7 +87,10 @@ export const projects: Project[] = [
         caption: 'Patient history',
       },
     ],
-    link: 'https://hci.dados.rio',
+    repositories: [
+      'https://github.com/prefeitura-rio/historico-clinico-integrado-app',
+    ],
+    availableAt: ['https://hci.dados.rio'],
   },
   {
     title:
@@ -126,7 +133,7 @@ export const projects: Project[] = [
         caption: 'Patient history',
       },
     ],
-    link: 'https://mulher.rio',
+    availableAt: ['https://staging.mulher.rio'],
   },
   {
     title: 'Full Stack Restaurant Delivery Management System',
@@ -186,7 +193,11 @@ export const projects: Project[] = [
         caption: 'Orders Table',
       },
     ],
-    link: 'https://deliveryshop.victorassis.eng.br',
+    availableAt: ['https://deliveryshop.victorassis.dev'],
+    repositories: [
+      'https://github.com/victorassiso/delivery-shop-ui',
+      'https://github.com/victorassiso/delivery-shop-api',
+    ],
   },
   {
     title: 'Pet Adoption Platform',
@@ -252,7 +263,14 @@ export const projects: Project[] = [
         caption: 'Animals table',
       },
     ],
-    link: 'https://adas-saquarema.vercel.app/',
+    availableAt: [
+      'https://adas-saquarema.vercel.app',
+      'https://adas-admin.vercel.app',
+    ],
+    repositories: [
+      'https://github.com/victorassiso/adas-institutional-website',
+      'https://github.com/victorassiso/adas-admin',
+    ],
   },
   {
     title: 'Installment Purchase Interest Calculator',
@@ -282,7 +300,8 @@ export const projects: Project[] = [
         caption: 'Banner 4',
       },
     ],
-    link: 'https://www.credphone.pt/',
+    availableAt: ['https://credphone.pt'],
+    repositories: ['https://vercel.com/victorassisos-projects/price-simulator'],
   },
   {
     title: 'Coffee Delivery E-Commerce',
@@ -303,7 +322,8 @@ export const projects: Project[] = [
         caption: 'Price simulator tool',
       },
     ],
-    link: 'https://victorassiso.github.io/coffee-delivery/',
+    availableAt: ['https://victorassiso.github.io/coffee-delivery'],
+    repositories: ['https://github.com/victorassiso/coffee-delivery'],
   },
   {
     title: 'Timer & Task Tracker',
@@ -324,6 +344,7 @@ export const projects: Project[] = [
         caption: 'Tasks history',
       },
     ],
-    link: 'https://victorassiso.github.io/coffee-delivery/',
+    availableAt: ['https://victorassiso.github.io/timer'],
+    repositories: ['https://github.com/victorassiso/timer'],
   },
 ]

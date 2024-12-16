@@ -1,5 +1,10 @@
 'use client'
+
 import Image from 'next/image'
+import Link from 'next/link'
+import { Fragment } from 'react'
+
+import type { Project } from '@/assets/projects'
 
 import {
   Carousel,
@@ -16,26 +21,16 @@ import {
   DialogTrigger,
 } from './ui/dialog'
 
-interface PortfolioCardProps {
-  tumbnail: string
-  title: string
-  link: string
-  description: string
-  skills: string[]
-  images: {
-    path: string
-    caption: string
-  }[]
-}
-
 export function PortfolioCard({
   tumbnail,
   title,
-  link,
   description,
   skills,
   images,
-}: PortfolioCardProps) {
+  availableAt,
+  institutionalWebsite,
+  repositories,
+}: Project) {
   return (
     <Dialog>
       <div className="flex flex-col gap-6 py-10 pl-7">
@@ -87,9 +82,7 @@ export function PortfolioCard({
           </Carousel>
 
           <div className="flex flex-col gap-2">
-            <span className="font-title text-lg font-semibold">
-              Skills and deliverables
-            </span>
+            <span className="font-title text-lg font-semibold">Tech Stack</span>
             <div className="flex flex-wrap gap-1 space-x-1">
               {skills.map((skill, index) => (
                 <div
@@ -109,17 +102,61 @@ export function PortfolioCard({
             <span className="text-sm text-muted-foreground">{description}</span>
           </div>
 
-          <div className="flex items-center gap-4">
-            <span className="font-title text-lg font-semibold">
-              Avalable at:
-            </span>
-            <a
-              href={link}
-              target="_blank"
-              className="cursor-pointer text-sm underline"
-            >
-              {link}
-            </a>
+          <div>
+            {institutionalWebsite && (
+              <p>
+                <span className="font-title font-semibold">
+                  Institutional Website:
+                </span>
+                <Link
+                  href={institutionalWebsite}
+                  target="_blank"
+                  className="ml-2 cursor-pointer text-sm underline"
+                >
+                  {institutionalWebsite}
+                </Link>
+              </p>
+            )}
+            {availableAt && (
+              <p>
+                <span className="mr-2 font-title font-semibold">
+                  Available at:
+                </span>
+                {availableAt.map((item, index) => (
+                  <Fragment key={index}>
+                    <Link
+                      key={index}
+                      href={item}
+                      target="_blank"
+                      className="cursor-pointer text-sm underline"
+                    >
+                      {item}
+                    </Link>
+                    {index !== availableAt.length - 1 && <span>, </span>}
+                  </Fragment>
+                ))}
+              </p>
+            )}
+            {repositories && (
+              <p>
+                <span className="mr-2 font-title font-semibold">
+                  Repositories:
+                </span>
+                {repositories.map((item, index) => (
+                  <Fragment key={index}>
+                    <Link
+                      key={index}
+                      href={item}
+                      target="_blank"
+                      className="cursor-pointer text-sm underline"
+                    >
+                      {item}
+                    </Link>
+                    {index !== repositories.length - 1 && <span>, </span>}
+                  </Fragment>
+                ))}
+              </p>
+            )}
           </div>
         </div>
       </DialogContent>

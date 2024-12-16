@@ -19,18 +19,9 @@ export function Portfolio() {
         </SectionDescription>
       </SectionHeader>
       <SectionContent className="flex gap-24 overflow-auto pb-2 pl-1 pr-10">
-        {projects.map(
-          ({ title, description, tumbnail, images, skills, link }) => (
-            <PortfolioCard
-              title={title}
-              description={description}
-              tumbnail={tumbnail}
-              images={images}
-              skills={skills}
-              link={link}
-            />
-          ),
-        )}
+        {projects.map((props, index) => (
+          <PortfolioCard key={index} {...props} />
+        ))}
       </SectionContent>
     </SectionContainer>
   )
