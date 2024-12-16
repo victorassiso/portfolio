@@ -22,12 +22,13 @@ export const projects: Project[] = [
     skills: [
       'React',
       'Next.js',
-      'Interactive Map',
-      'Deck.gl',
       'Typescript',
+      'Shadcn UI',
       'Tailwind CSS',
       'REST API',
-      '',
+      'React useQuery',
+      'Mapbox gl',
+      'Deck.gl',
     ],
     images: [
       {
@@ -49,7 +50,6 @@ export const projects: Project[] = [
     ],
     institutionalWebsite: 'https://civitas.rio',
     repositories: ['https://github.com/prefeitura-rio/civitas-app'],
-    availableAt: ['https://app.civitas.rio'],
   },
   {
     title: 'Integraded Healthcare Record',
@@ -59,24 +59,25 @@ export const projects: Project[] = [
     skills: [
       'React',
       'Next.js',
-      'Shadcn UI',
-      'Storybook',
       'Typescript',
+      'Shadcn UI',
       'Tailwind CSS',
       'REST API',
+      'React useQuery',
+      'Storybook',
     ],
     images: [
       {
         path: '/hci/login.png',
-        caption: 'Vehicles Search Satellite Style and macro view',
+        caption: 'Login page',
       },
       {
         path: '/hci/2fa.png',
-        caption: 'Vehicles Search Map Style and Tooltip',
+        caption: '2FA modal',
       },
       {
         path: '/hci/search.png',
-        caption: 'Vehicles Module Demo',
+        caption: 'Patient search page',
       },
       {
         path: '/hci/result_1.png',
@@ -90,19 +91,26 @@ export const projects: Project[] = [
     repositories: [
       'https://github.com/prefeitura-rio/historico-clinico-integrado-app',
     ],
-    availableAt: ['https://hci.dados.rio'],
   },
   {
     title:
-      'Informative and Supportive Website for Women facing Domestic Violence',
+      'Informative and Supportive Website for Women facing Domestic Violence (early-stage/mobile only)',
     description:
       "mulher.rio is an informative and supportive website designed to assist women facing domestic violence. The platform provides a sensitive onboarding process that includes a questionnaire to assess the severity of the user's situation. Based on the results, the website delivers tailored information and resources to help the woman seek appropriate support. It also connects users to a network of specialized women’s support centers, offering a safe and confidential space for those in need of help. By combining empathy, education, and immediate action, mulher.rio empowers women to take steps toward safety and support in times of crisis.",
     tumbnail: '/mulher.rio/map.png',
-    skills: ['React', 'Next.js', 'Shadcn UI', 'Typescript', 'Tailwind CSS'],
+    skills: [
+      'React',
+      'Next.js',
+      'Typescript',
+      'Shadcn UI',
+      'Tailwind CSS',
+      'Mapbox gl',
+      'Deck.gl',
+    ],
     images: [
       {
         path: '/mulher.rio/onboarding_1.png',
-        caption: 'Vehicles Search Satellite Style and macro view',
+        caption: 'Onboarding',
       },
       {
         path: '/mulher.rio/onboarding_2.png',
@@ -142,18 +150,19 @@ export const projects: Project[] = [
     tumbnail: '/delivery-shop/dashboard.png',
     skills: [
       'React',
-      'Node.js',
+      'Vite',
       'Typescript',
-      'Docker',
+      'Shadcn UI',
       'Tailwind CSS',
-      'User Authentication',
-      'Fastify',
       'REST API',
+      'Node.js',
+      'Fastify',
+      'User Authentication',
       'Automated Testing',
-      'CI/CD',
-      'Git/GitHub',
-      'Relational Database',
       'PostgreSQL',
+      'Prisma ORM',
+      'WebSockets',
+      'Docker',
     ],
     images: [
       {
@@ -204,15 +213,7 @@ export const projects: Project[] = [
     description:
       'A beautiful and modern website for displaying rescued animals available for adoption, receive donations and registrations for volunteers, promote information and campaigns. The project has an admin platform allowing the admin user to create and edit animals.',
     tumbnail: '/adas/home.png',
-    skills: [
-      'React',
-      'Next.js',
-      'Typescript',
-      'Firebase',
-      'Tailwind CSS',
-      'CI/CD',
-      'Git/GitHub',
-    ],
+    skills: ['React', 'Next.js', 'Typescript', 'Tailwind CSS', 'Firebase'],
     images: [
       {
         path: '/adas/adopt.png',
@@ -277,7 +278,7 @@ export const projects: Project[] = [
     description:
       'A simple and elegant website made in WordPress that integrates a price simulation tool made with React and Typescript.',
     tumbnail: '/credphone/price-simulator.png',
-    skills: ['WordPress', 'React', 'Typescript'],
+    skills: ['React', 'Typescript', 'Tailwind CSS', 'WordPress'],
     images: [
       {
         path: '/credphone/banner1.png',

@@ -82,7 +82,7 @@ export function PortfolioCard({
           </Carousel>
 
           <div className="flex flex-col gap-2">
-            <span className="font-title text-lg font-semibold">Tech Stack</span>
+            <span className="font-title text-lg font-semibold">Skills</span>
             <div className="flex flex-wrap gap-1 space-x-1">
               {skills.map((skill, index) => (
                 <div
