@@ -22,8 +22,8 @@ export function Stacks() {
         <StackCard tag="Frontend Web" icon="./react.svg" name="React JS" />
         <StackCard tag="Backend Web" icon="./node.svg" name="Node.js" />
         <StackCard icon="/typescript.svg" name="Typescript" />
+        <StackCard tag="Backend Web" icon="/python.svg" name="Python" />
         <StackCard icon="/c-plus-plus.svg" name="C++" />
-        <StackCard icon="/python.svg" name="Python" />
       </SectionContent>
     </SectionContainer>
   )
